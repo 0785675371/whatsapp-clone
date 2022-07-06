@@ -1,0 +1,128 @@
+.messages-list{
+    background-color:var(--background-color-1);
+}
+.onTop{
+    padding: 10px 16px;
+    background-color: var(--background-color-2);
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 59px;
+   
+}
+.pic{
+    
+     border-radius: 50%;
+     height: 40px; 
+     width: 40px; 
+     cursor: pointer; 
+     float: left; 
+     top: 0; 
+     justify-content: left 
+}
+.button{
+    color: var( --surface-color-3);
+}
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.icon{
+    
+    cursor: pointer;
+    margin-left: 0;
+    margin: 0 18px 0 8px
+    
+    
+}
+.search{
+    padding: 0 12px;
+    background-color: var( --background-color-1);
+    border-color: black;
+    
+}
+.ser{
+    position: relative;
+    z-index: 100;
+    box-sizing: border-box;
+    display: flex;
+    flex: none;
+    align-items: center;
+    height: 49px;
+}
+.seri{
+    position: relative;
+    box-sizing: border-box;
+    flex: 1;
+    background-color: var( --background-color-2);
+    width: 10%;
+    height: 70%;
+    border-radius: 8px;
+}
+.ser-button{
+    left: 12px;
+    position: absolute;
+    top: 5px;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+    color: var( --surface-color-3);
+}
+button {
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: 0;
+}
+.in{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    left: 62px;
+
+}
+.vis{
+    user-select: none;
+    transition: opacity .08s linear;
+    pointer-events: none;
+    bottom: 2px;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 20px;
+    top: 2px;
+    position: absolute;
+    visibility: visible;
+    left: 4px
+    
+}
+.in-put{
+    padding-right: 0;
+    cursor: text;
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+input{
+    outline: none;
+    padding: 0;
+    background: none;
+    border: 0;
+    padding-right: 0;
+    cursor: text;
+    position: relative;
+    display: flex;
+    flex: 1;
+    left: 62px;
+}
+Sidebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
