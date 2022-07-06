@@ -3,10 +3,14 @@ import AsideSection from "./messages-list";
 
 function App() {
   return (
-   <>
-   <AsideSection />
-   <section className="messages-view"></section>
+   <> 
+   <div className='All'>
+        <AsideSection />
+        <section className="messages-view"></section>
+   </div>
+   
    </>
   );
 }
+
 export default App;

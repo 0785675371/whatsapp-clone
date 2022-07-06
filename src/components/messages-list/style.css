@@ -1,6 +1,11 @@
 .messages-list{
     background-color:var(--background-color-1);
 }
+.msg-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .onTop{
     padding: 10px 16px;
     background-color: var(--background-color-2);
@@ -23,26 +28,37 @@
      justify-content: left 
 }
 .button{
-    color: var( --surface-color-3);
+    flex: none;
+    color: var(--surface-icon-color);
 }
 .btn{
     display: flex;
     align-items: center;
-    padding: 8px;
+}
+.btn span{
+    display: flex;
+    align-items: center;
 }
 .icon{
-    
-    cursor: pointer;
+    flex: none;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
     margin-left: 0;
-    margin: 0 18px 0 8px
-    
+    margin: 0 6px 0 8px;
+    padding: 0;
+    margin-left: 10px
     
 }
+.ic{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .search{
-    padding: 0 12px;
-    background-color: var( --background-color-1);
-    border-color: black;
-    
+    background-color: var(--background-color-1);
+    flex: none;
 }
 .ser{
     position: relative;
@@ -52,6 +68,9 @@
     flex: none;
     align-items: center;
     height: 49px;
+    transition: box-shadow .18s ease-out,background-color .25s ease-out;
+    padding: 0 12px;
+    background-color: var(--search-input-container-back);
 }
 .seri{
     position: relative;
@@ -118,11 +137,255 @@ input{
     position: relative;
     display: flex;
     flex: 1;
-    left: 62px;
+    left: 38px;
 }
-Sidebar{
+.notification{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    background-color: var(--background-color-3);
+    cursor: pointer;
+    
+}
+.notify{
+    flex: none;
+    overflow: hidden;
+    transform-origin: top center;
+}
+.nott{
+    padding: 13px 12px 14px 13px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    min-height: 95px;
+}
+.noti{
+    flex: 0 0 49px;
+    color: var(--background-color-1);
+    cursor: pointer;
+}
+.not-icon{
+    margin-right: 15px;
+    color: var(--background-color-1);
+    flex: 0 0 49px;
+}
+.text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.note{
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--surface-color-1);
+}
+.note0:hover{
+    text-decoration: underline;
+}
+.note-s{
+    color: var(--surface-color-1);
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: 2px
+}
+.not{
+    display: block;
+}
+.no{
+    margin-left: 3px;
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+}
+.chat-list{
+    background-color: var(--background-color-1);
+    z-index: 1;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.list0{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.chat-hov:hover{
+    background-color: var(--background-color-2);
+}
+.list2{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    pointer-events: all;
+}
+.list3{
+    display: flex;
+}
+.list4{
+    padding: 0 15px 0 13px;
+    margin-top: -1px;
+    flex: none;
+    align-items: center;
+    display: flex;
+}
+.list6{
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    position: relative;
+}
+.list7{
+    left: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.list7 img{
+    border-radius: 50%;
+    opacity: 1;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.li1{
+    padding-right: -15px;
+    border-top: 1px solid var(--background-color-2);
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    min-width: 0;
+}
+.li2{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+.li3{
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.li4{
+    text-align: left;
+    font-weight: 500;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--surface-color-1);
+}
+.li5{
+    margin-top: 3px;
+    margin-left: 6px;
+    font-weight: 600;
+    color: var(--surface-icon-color2);
+    overflow: hidden;
+    line-height: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: none;
+    max-width: 100%;
+    font-size: 12px;
+}
+.li6{
+    visibility: visible;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    flex-grow: 1;
+    overflow-x: hidden;
+    position: relative;
+}
+.li7{
+    flex-grow: 1;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.li8{
+    margin-left: 6px;
+    font-weight: 600;
+    color: var(--surface-icon-color2);
+    flex: none;
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.li9{
+    display: flex;
+    align-items: flex-start;
+}
+.li10{
+    visibility: visible;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    flex-grow: 1;
+    overflow-x: hidden;
+    position: relative;
+}
+.li12{
+    margin-right: 0;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.li13{
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    border-radius: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--surface-icon-color2);
+    color: var(--background-color-1);
+    display: inline-block;
+    padding-top: 0.3em;
+    line-height: 1;
+    vertical-align: top;
+    min-height: 1em;
+    font-size: 0.75rem;
+    min-width: 0.9em;
+    padding-bottom: 0.4em;
+}
+span{
+    font: inherit;
+    font-size: 100%;
+    vertical-align: initial;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+div{
+    font: inherit;
+    font-size: 100%;
+    vertical-align: initial;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
